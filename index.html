@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Object Detection | ml5.js</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/ml5@0.12.2/dist/ml5.min.js"></script>
+</head>
+
+<body class="grey darken-4 white-text">
+
+    <!-- Centered Title -->
+    <h3 class="center-align" style="margin-top: 30px; font-weight: 600;">
+        AI Object Detection
+    </h3>
+
+    <!-- Loading Section -->
+    <div id="loadingSection" class="center-align" style="margin-top: 20px;">
+        <div class="preloader-wrapper active">
+            <div class="spinner-layer spinner-blue-only">
+                <div class="circle-clipper left"><div class="circle"></div></div>
+                <div class="gap-patch"><div class="circle"></div></div>
+                <div class="circle-clipper right"><div class="circle"></div></div>
+            </div>
+        </div>
+        <h6>Preparing camera & loading model…</h6>
+    </div>
+
+    <!-- Canvas -->
+    <div class="container center-align" style="margin-top: 40px;">
+        <canvas id="c1"></canvas>
+    </div>
+
+    <!-- Hidden Video Feed -->
+    <video id="video" playsinline autoplay muted></video>
+
+    <script src="video.js"></script>
+</body>
+</html>

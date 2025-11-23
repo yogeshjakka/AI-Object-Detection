@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+}
+
+/* Hide video feed */
+video {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Canvas alignment */
+canvas {
+    margin-top: 20px;
+}
+
+/* Remove unwanted table/card rules */
+table, tr, td {
+    border: none;
+}
